@@ -3,8 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dianlucca Belletti</title>
-  <meta name="description" content="Portfólio de automações financeiras e painéis de BI de Dianlucca Belletti, estudante de Ciências Contábeis em Belo Horizonte.">
+  <title>Dianlucca Belletti | Projetos de automação e BI</title>
+  <meta name="description" content="Projetos de automação financeira e painéis de BI, com o problema, a solução e o resultado de cada um.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dkdian.github.io/">
+  <meta property="og:title" content="Dianlucca Belletti | Projetos de automação e BI">
+  <meta property="og:description" content="Rotinas financeiras que levavam horas, agora fecham sozinhas. Veja o problema, a solução e o resultado de cada projeto.">
+  <meta property="og:image" content="https://dkdian.github.io/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,20 +20,19 @@
   <div class="wrap">
     <header class="top">
       <a class="name" href="./">Dianlucca Belletti</a>
-      <nav aria-label="Principal">
-        <a href="#projetos">Projetos</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
+      <nav aria-label="Contato">
+        <a href="https://www.linkedin.com/in/dianlucca-carvalho-belletti-b0699b262" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="cv-link" href="assets/curriculo.pdf" download="Curriculo-Dianlucca-Belletti.pdf">Currículo</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <h1>Rotinas financeiras que levavam horas, agora fecham sozinhas.</h1>
-        <p>Sou estudante de Ciências Contábeis e construo automações e painéis de BI para áreas financeiras. Cada projeto mostra o problema, o que foi construído e o resultado, com dados fictícios para proteger as empresas envolvidas.</p>
+        <p>Automações e painéis de BI construídos para áreas financeiras. Cada projeto mostra o problema, o que foi construído e o resultado, com dados fictícios para proteger as empresas envolvidas.</p>
       </section>
 
-      <section id="projetos" class="ledger" aria-label="Projetos">
+      <section class="ledger" aria-label="Projetos">
         <div class="ledger-head" aria-hidden="true">
           <span>Projeto</span>
           <span>Área</span>
@@ -37,32 +42,12 @@
         <div class="ledger-end"><span id="contagem"></span></div>
       </section>
 
-      <section id="sobre" class="section">
-        <div class="cols">
-          <div>
-            <h2>Sobre</h2>
-            <p>Concluo Ciências Contábeis na PUC Minas em dezembro de 2026. Meu diferencial é juntar conhecimento de finanças com ferramentas de dados, então entendo tanto o fechamento do mês quanto a forma de automatizá-lo.</p>
-            <p>Hoje atuo em uma consultoria financeira em Belo Horizonte, onde automatizo conciliações, relatórios de fluxo de caixa e entregas recorrentes para clientes.</p>
-          </div>
-          <div>
-            <h2>Trajetória</h2>
-            <ul class="facts">
-              <li>Estágio em consultoria financeira, automação e BI</li>
-              <li>Estágio em finanças de supply chain em multinacional do setor de transporte</li>
-              <li>PUC Consultoria Jr, de consultor a vice-presidente financeiro</li>
-              <li>1º lugar no hackathon de consultoria do CRA-MG, entre 20 equipes</li>
-            </ul>
-          </div>
+      <section class="contact">
+        <h2>Quer conversar sobre algum desses projetos?</h2>
+        <div class="contact-actions">
+          <a class="btn" href="https://www.linkedin.com/in/dianlucca-carvalho-belletti-b0699b262" target="_blank" rel="noopener">Falar comigo no LinkedIn</a>
+          <a class="btn btn-ghost cv-link" href="assets/curriculo.pdf" download="Curriculo-Dianlucca-Belletti.pdf">Baixar currículo (PDF)</a>
         </div>
-      </section>
-
-      <section id="contato" class="section">
-        <h2>Contato</h2>
-        <ul class="facts">
-          <li><a href="https://www.linkedin.com/in/dianlucca-carvalho-belletti-b0699b262">LinkedIn</a></li>
-          <!-- Troque pelo e-mail que quer divulgar, por exemplo <a href="mailto:voce@email.com">voce@email.com</a> -->
-          <li><mark class="preencher">E-mail profissional</mark></li>
-        </ul>
       </section>
     </main>
 
@@ -71,7 +56,7 @@
     </footer>
   </div>
 
-  <script src="assets/projetos.js"></script>
+  <script src="assets/projetos/ordem.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

@@ -160,6 +160,29 @@ mark.preencher {
   border-radius: 2px;
 }
 
+/* Contato no fim da página inicial */
+.contact { padding: 0 0 80px; }
+.contact h2 { font-size: 28px; letter-spacing: -0.01em; margin: 0 0 20px; font-weight: 800; max-width: 22ch; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--paper);
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--accent);
+}
+.btn:hover { filter: brightness(1.1); }
+.btn-ghost { background: transparent; color: var(--accent); }
+[hidden] { display: none !important; }
+
+/* Desafios na página de projeto */
+.challenges { display: grid; gap: 24px; }
+.challenge h3 { font-size: 18px; margin: 0 0 6px; }
+.challenge p { margin: 0; max-width: 64ch; }
+
 /* Seções gerais */
 .section { padding: 0 0 80px; }
 .section h2 {
