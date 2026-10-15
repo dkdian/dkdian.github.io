@@ -5,48 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dianlucca Belletti | Projetos de automação e BI</title>
   <meta name="description" content="Projetos de automação financeira e painéis de BI, com o problema, a solução e o resultado de cada um.">
+  <meta name="theme-color" content="#0E7C5A">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dkdian.github.io/">
   <meta property="og:title" content="Dianlucca Belletti | Projetos de automação e BI">
   <meta property="og:description" content="Rotinas financeiras que levavam horas, agora fecham sozinhas. Veja o problema, a solução e o resultado de cada projeto.">
   <meta property="og:image" content="https://dkdian.github.io/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E7C5A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='28' text-anchor='middle' fill='white'%3EDB%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="top">
-      <a class="name" href="./">Dianlucca Belletti</a>
-      <nav aria-label="Contato">
-        <a href="https://www.linkedin.com/in/dianlucca-carvalho-belletti-b0699b262" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="cv-link" href="assets/curriculo.pdf" download="Curriculo-Dianlucca-Belletti.pdf">Currículo</a>
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="./" aria-label="Dianlucca Belletti, página inicial">
+        <span class="mono" aria-hidden="true">DB</span>
+        <span class="brand-txt"><strong>Dianlucca Belletti</strong><small>Automação financeira e BI</small></span>
+      </a>
+      <nav class="actions" aria-label="Contato">
+        <a class="btn btn-ghost btn-sm" href="https://www.linkedin.com/in/dianlucca-carvalho-belletti-b0699b262" target="_blank" rel="noopener">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="btn btn-primary btn-sm cv-link" href="assets/curriculo.pdf" download="Curriculo-Dianlucca-Belletti.pdf">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Currículo</span>
+        </a>
       </nav>
-    </header>
+    </div>
+  </header>
 
+  <div class="wrap">
     <main>
       <section class="hero">
-        <h1>Rotinas financeiras que levavam horas, agora fecham sozinhas.</h1>
-        <p>Automações e painéis de BI construídos para áreas financeiras. Cada projeto mostra o problema, o que foi construído e o resultado, com dados fictícios para proteger as empresas envolvidas.</p>
+        <div class="hero-text">
+          <p class="eyebrow">Portfólio de projetos</p>
+          <h1>Rotinas financeiras que levavam horas, <em>agora fecham sozinhas.</em></h1>
+          <p class="hero-sub">Automações e painéis de BI construídos para áreas financeiras. Cada projeto mostra o problema, o que foi construído e o resultado, com dados fictícios para proteger as empresas envolvidas.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projetos">Ver os projetos
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m0 0-6-6m6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/dianlucca-carvalho-belletti-b0699b262" target="_blank" rel="noopener">Falar comigo</a>
+          </div>
+        </div>
+        <aside class="hero-panel" id="painel" aria-label="Resumo do portfólio"></aside>
       </section>
 
-      <section class="ledger" aria-label="Projetos">
-        <div class="ledger-head" aria-hidden="true">
-          <span>Projeto</span>
-          <span>Área</span>
-          <span>Resultado</span>
+      <section class="projects" id="projetos" aria-labelledby="titulo-projetos">
+        <div class="section-head">
+          <h2 id="titulo-projetos">Projetos</h2>
+          <span class="count" id="contagem"></span>
         </div>
-        <div id="lista"></div>
-        <div class="ledger-end"><span id="contagem"></span></div>
+        <div class="cards" id="lista"></div>
       </section>
 
       <section class="contact">
-        <h2>Quer conversar sobre algum desses projetos?</h2>
-        <div class="contact-actions">
-          <a class="btn" href="https://www.linkedin.com/in/dianlucca-carvalho-belletti-b0699b262" target="_blank" rel="noopener">Falar comigo no LinkedIn</a>
-          <a class="btn btn-ghost cv-link" href="assets/curriculo.pdf" download="Curriculo-Dianlucca-Belletti.pdf">Baixar currículo (PDF)</a>
+        <div class="contact-in">
+          <div>
+            <h2>Quer conversar sobre algum desses projetos?</h2>
+            <p>Posso mostrar como a rotina funciona e como adaptar a ideia para a sua área financeira.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-light" href="https://www.linkedin.com/in/dianlucca-carvalho-belletti-b0699b262" target="_blank" rel="noopener">Falar comigo no LinkedIn</a>
+            <a class="btn btn-outline-light cv-link" href="assets/curriculo.pdf" download="Curriculo-Dianlucca-Belletti.pdf">Baixar currículo (PDF)</a>
+          </div>
         </div>
       </section>
     </main>

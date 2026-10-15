@@ -13,6 +13,10 @@ Gestores e profissionais de finanças, não programadores. Escreva em português
 - Imagens, GIFs e vídeos vão em `assets/img/`, com nome começando pelo slug, por exemplo `fluxo-caixa-teams-teams.gif`.
 - Não altere `index.html`, `projeto.html`, `assets/app.js` nem `assets/style.css` sem o dono pedir.
 
+## Identidade visual
+
+A página inicial mostra um cabeçalho fixo (monograma, nome e os botões de LinkedIn e currículo), uma abertura com um painel de resumo calculado a partir dos projetos e um cartão por projeto: ícone e tipo de solução (a cor vem da `area`), título, `resumo`, `resultadoCurto` em destaque e as quatro primeiras `ferramentas`. A página de projeto mostra o resultado, o cliente e as ferramentas no alto, e depois cada seção em blocos. Cores, espaçamentos e modo escuro ficam nas variáveis do início de `assets/style.css`.
+
 ## Campos de cada projeto
 
 Todos são texto em português. Campos opcionais que ficarem vazios simplesmente não aparecem.
@@ -29,7 +33,7 @@ Todos são texto em português. Campos opcionais que ficarem vazios simplesmente
 | `problema` | sim | Como era a rotina antes e por que era um problema. 3 a 5 frases |
 | `passos` | sim | Lista de 3 a 6 etapas do fluxo, cada uma com até 12 palavras |
 | `antesDepois` | sim | Lista de linhas `["Indicador", "Antes", "Depois"]`, de 3 a 6 linhas |
-| `midia` | não | Lista de `{ "arquivo": "nome.gif", "legenda": "..." }`. `arquivo: null` mostra um espaço reservado |
+| `midia` | não | Lista de `{ "arquivo": "nome.mp4", "legenda": "...", "poster": "capa.png" }`. Aceita imagem, GIF ou vídeo (mp4/webm, sem som, com controles, sem reprodução automática; `poster` é a imagem de capa do vídeo, opcional). `arquivo: null` mostra um espaço reservado |
 | `resultados` | sim | Lista de 2 a 5 ganhos concretos, com números sempre que existirem |
 | `desafios` | não | Lista de `{ "titulo": "...", "texto": "..." }` com obstáculos reais e como foram resolvidos. 2 a 4 itens |
 | `ferramentas` | sim | Lista de nomes de ferramentas |
