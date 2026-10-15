@@ -9,6 +9,12 @@ registrarProjeto({
   "cliente": "uma empresa do setor florestal",
   "resumo": "Toda terça às 10h o robô baixa os relatórios do Drive, cria a aba da semana e avisa o gestor para validar. Depois, três botões conferem as notas no ERP, dão baixa nos pagamentos e geram o arquivo de importação.",
   "resultadoCurto": "6 h por semana viraram 45 min",
+  "links": [
+    {
+      "rotulo": "Ver o código no GitHub",
+      "url": "https://github.com/dkdian/conferencia-nf-demo"
+    }
+  ],
   "problema": "Toda semana, alguém precisava baixar dois relatórios de fluxo de caixa no Drive do cliente, guardar numa pasta com a data, montar a planilha de lançamentos e avisar o gestor para validar. Só então começava o trabalho pesado: boa parte das notas fiscais já estava no sistema de gestão como conta a pagar em aberto, e era preciso procurar nota por nota, comparar fornecedor, valor e vencimento, marcar cada uma como paga numa janela própria e apagar da planilha o que já existia, para não importar em duplicidade. Parcelas, notas com o número escrito de outro jeito e pequenas diferenças de valor exigiam julgamento caso a caso. O trabalho era lento, sem registro do que foi decidido, e um esquecimento virava lançamento duplicado no fluxo de caixa.",
   "passos": [
     "Toda terça às 10h o robô baixa os relatórios do Drive",

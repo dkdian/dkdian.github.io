@@ -223,6 +223,9 @@ mark.preencher { background: var(--fill); color: var(--fill-ink); padding: 0 4px
 .kpi.hot > span { color: var(--accent-text); }
 .kpi .mini-tools { margin-top: 2px; }
 
+.p-links { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 0; }
+.p-links svg { width: 1.2em; height: 1.2em; }
+
 .block { margin: 56px 0 0; }
 .block > h2 {
   display: flex; align-items: center; gap: 12px; margin: 0 0 20px; font-size: 26px; font-weight: 800; letter-spacing: -.015em;

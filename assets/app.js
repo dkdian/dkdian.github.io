@@ -175,6 +175,10 @@ function render(PROJETOS) {
     return html ? '<section class="block"><h2>' + titulo + "</h2>" + html + "</section>" : "";
   }
 
+  var links = (p.links || []).map(function (l) {
+    return '<a class="btn btn-primary" href="' + encodeURI(l.url) + '" target="_blank" rel="noopener">' + svg("codigo") + " " + fmt(l.rotulo) + "</a>";
+  }).join("");
+
   var ferr = (p.ferramentas || []).slice(0, 5).map(function (f) { return "<li>" + fmt(f) + "</li>"; }).join("");
 
   alvo.innerHTML =
@@ -190,6 +194,7 @@ function render(PROJETOS) {
         '<div class="kpi"><span>Cliente</span><strong>' + fmt(p.cliente) + "</strong></div>" +
         '<div class="kpi"><span>Ferramentas</span><ul class="mini-tools">' + ferr + "</ul></div>" +
       "</div>" +
+      (links ? '<div class="p-links">' + links + "</div>" : "") +
     "</section>" +
 
     bloco("O problema", p.problema ? '<div class="prose"><p>' + fmt(p.problema) + "</p></div>" : "") +

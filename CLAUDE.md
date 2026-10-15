@@ -34,6 +34,7 @@ Todos são texto em português. Campos opcionais que ficarem vazios simplesmente
 | `passos` | sim | Lista de 3 a 6 etapas do fluxo, cada uma com até 12 palavras |
 | `antesDepois` | sim | Lista de linhas `["Indicador", "Antes", "Depois"]`, de 3 a 6 linhas |
 | `midia` | não | Lista de `{ "arquivo": "nome.mp4", "legenda": "...", "poster": "capa.png" }`. Aceita imagem, GIF ou vídeo (mp4/webm, sem som, com controles, sem reprodução automática; `poster` é a imagem de capa do vídeo, opcional). `arquivo: null` mostra um espaço reservado |
+| `links` | não | Lista de `{ "rotulo": "Ver o código no GitHub", "url": "https://..." }`. Aparece como botões no alto da página do projeto |
 | `resultados` | sim | Lista de 2 a 5 ganhos concretos, com números sempre que existirem |
 | `desafios` | não | Lista de `{ "titulo": "...", "texto": "..." }` com obstáculos reais e como foram resolvidos. 2 a 4 itens |
 | `ferramentas` | sim | Lista de nomes de ferramentas |
