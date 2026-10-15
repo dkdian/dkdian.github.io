@@ -4,6 +4,7 @@
 var ORDEM_PROJETOS = [
   "conciliacao-livro-caixa",
   "fluxo-caixa-teams",
+  "conferencia-notas-fiscais",
   "painel-custos",
   "financas-pessoais"
 ];
