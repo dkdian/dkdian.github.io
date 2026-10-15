@@ -96,6 +96,7 @@ function render(PROJETOS) {
     var n = PROJETOS.length;
     document.getElementById("contagem").textContent = n + (n === 1 ? " projeto" : " projetos");
 
+
     // Painel de resumo, calculado a partir dos próprios projetos
     var painel = document.getElementById("painel");
     if (painel && n) {
@@ -106,14 +107,14 @@ function render(PROJETOS) {
       });
       var nomes = Object.keys(uso).sort(function (a, b) { return uso[b] - uso[a] || a.localeCompare(b); });
       painel.innerHTML =
-        '<p class="panel-title">Em resumo</p>' +
+        '<div class="panel-left"><p class="panel-title">Em resumo</p>' +
         '<div class="stats">' +
-          '<div class="stat"><strong>' + n + "</strong><span>projetos</span></div>" +
-          '<div class="stat"><strong>' + Object.keys(areas).length + "</strong><span>tipos de solução</span></div>" +
+          '<div class="stat"><strong>' + n + "</strong><span>" + (n === 1 ? "projeto" : "projetos") + "</span></div>" +
+          '<div class="stat"><strong>' + Object.keys(areas).length + "</strong><span>" + (Object.keys(areas).length === 1 ? "tipo de solução" : "tipos de solução") + "</span></div>" +
           '<div class="stat"><strong>' + nomes.length + "</strong><span>ferramentas</span></div>" +
-        "</div>" +
-        '<p class="panel-title">Ferramentas mais usadas</p>' +
-        '<div class="panel-tools">' + nomes.slice(0, 9).map(function (f) { return "<span>" + fmt(f) + "</span>"; }).join("") + "</div>";
+        "</div></div>" +
+        '<div class="panel-right"><p class="panel-title">' + (n === 1 ? "Ferramentas do projeto" : "Ferramentas mais usadas") + "</p>" +
+        '<div class="panel-tools">' + nomes.slice(0, 12).map(function (f) { return "<span>" + fmt(f) + "</span>"; }).join("") + "</div></div>";
     }
   }
 
@@ -207,5 +208,5 @@ function render(PROJETOS) {
     '<section class="block"><p class="note">' +
       fmt(p.nota || "Dados, nomes e telas fictícios. A estrutura e a lógica refletem o projeto real.") +
     "</p></section>" +
-    '<nav class="pager" aria-label="Outros projetos">' + link(ant, "Anterior") + link(prox, "Próximo") + "</nav>";
+    (ant || prox ? '<nav class="pager" aria-label="Outros projetos">' + link(ant, "Anterior") + link(prox, "Próximo") + "</nav>" : "");
 }

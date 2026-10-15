@@ -15,7 +15,7 @@ Gestores e profissionais de finanças, não programadores. Escreva em português
 
 ## Identidade visual
 
-A página inicial mostra um cabeçalho fixo (monograma, nome e os botões de LinkedIn e currículo), uma abertura com um painel de resumo calculado a partir dos projetos e um cartão por projeto: ícone e tipo de solução (a cor vem da `area`), título, `resumo`, `resultadoCurto` em destaque e as quatro primeiras `ferramentas`. A página de projeto mostra o resultado, o cliente e as ferramentas no alto, e depois cada seção em blocos. Cores, espaçamentos e modo escuro ficam nas variáveis do início de `assets/style.css`.
+A página inicial mostra um cabeçalho fixo (monograma, nome e os botões de LinkedIn e currículo), um painel de resumo em largura total, calculado a partir dos próprios projetos (quantidade, tipos de solução e ferramentas), e a lista de projetos, um cartão embaixo do outro: ícone e tipo de solução (a cor vem da `area`), título, `resumo`, `resultadoCurto` em destaque e as quatro primeiras `ferramentas`. A página de projeto mostra o resultado, o cliente e as ferramentas no alto, e depois cada seção em blocos. Cores, espaçamentos e modo escuro ficam nas variáveis do início de `assets/style.css`.
 
 ## Campos de cada projeto
 
