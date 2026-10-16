@@ -2,5 +2,6 @@
 // Para incluir um projeto novo, crie assets/projetos/<nome>.js e acrescente o nome aqui.
 
 var ORDEM_PROJETOS = [
-  "conferencia-notas-fiscais"
+  "conferencia-notas-fiscais",
+  "formatacao-livro-caixa"
 ];
