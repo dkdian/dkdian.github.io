@@ -9,6 +9,12 @@ registrarProjeto({
   "cliente": "uma distribuidora",
   "resumo": "Os cinco relatórios de livro caixa que o sistema exporta, um por conta, viram uma única tabela já classificada. O fechamento do mês começa com os lançamentos lidos, conferidos e prontos para colar na planilha de controle.",
   "resultadoCurto": "4,5 h viraram até 20 min",
+  "links": [
+    {
+      "rotulo": "Ver o código no GitHub",
+      "url": "https://github.com/dkdian/formatacao-livro-caixa-demo"
+    }
+  ],
   "problema": "Todo mês o sistema de gestão do cliente exportava um relatório de livro caixa por conta, cinco arquivos no total. Esse relatório não é uma tabela: é um texto de largura fixa despejado numa única coluna, com o histórico quebrado em duas linhas, saldos do dia no meio, cabeçalho repetido a cada página, lançamentos cancelados e valores negativos com o sinal no fim. Cada arquivo era organizado à mão, cada lançamento precisava de tipo, categoria e fornecedor, e as contrapartidas novas tinham de ser caçadas uma a uma. Só depois disso os lançamentos podiam ser colados na planilha do mês, e o fechamento levava cerca de 4,5 horas.",
   "passos": [
     "O sistema exporta um relatório por conta, cinco por mês",

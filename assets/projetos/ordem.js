@@ -3,5 +3,7 @@
 
 var ORDEM_PROJETOS = [
   "conferencia-notas-fiscais",
-  "formatacao-livro-caixa"
+  "formatacao-livro-caixa",
+  "painel-financeiro-power-bi",
+  "relatorio-financeiro-automatico"
 ];
